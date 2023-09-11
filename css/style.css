@@ -1,0 +1,242 @@
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  --gradient1: hsl(252, 100%, 67%);
+  --gradient2: hsl(241, 81%, 54%);
+
+  --gradient3: hsla(256, 72%, 46%, 1);
+  --gradient4: hsla(241, 72%, 46%, 0);
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+
+  --font: "Hanken Grotesk", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: var(--font);
+  font-size: 18px;
+
+}
+
+.component__container {
+  width: 375px;
+  height: 809px;
+  display: grid;
+  grid-template-rows: 356px 454px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Component Top                               */
+/* -------------------------------------------------------------------------- */
+.component__top {
+  background: linear-gradient(var(--gradient1), var(--gradient2));
+  border-radius: 0 0 40px 40px;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.component__top__title {
+  color: var(--Light-lavender);
+  margin-block: 1.6rem 1.5rem;
+  font-weight: 500;
+}
+
+.component__top__circule {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  background: linear-gradient(var(--gradient3), var(--gradient4));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5%;
+}
+.component__top__circule p {
+  color: var(--Light-lavender);
+  font-weight: 500;
+}
+
+.component__top__circule p span {
+  font-size: 2.5rem;
+  color: var(--White);
+  font-weight: 900;
+}
+
+.component__top__subtitle {
+  color: var(--White);
+  margin-top: 20px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.component__top__content {
+  width: 80%;
+  color: var(--Light-lavender);
+  text-align: center;
+  margin-bottom: 2.7rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Component Down                               */
+/* -------------------------------------------------------------------------- */
+
+.component__down {
+  padding: 1.8rem;
+}
+
+.component__down__title {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.component__down__item {
+  width: 100%;
+  height: 56px;
+  border-radius: 10px;
+  background-color: var(--Green-teal);
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10px;
+  font-weight: 700;
+}
+
+.component__down--red {
+  background-color: #fff6f5;
+}
+
+.component__down__item__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.component__down__item__text--red {
+  color: var(--Light-red);
+}
+
+.component__down__item__text__result span {
+  opacity: 0.6;
+}
+
+.component__down__item__text--yellow {
+  color: var(--Orangey-yellow);
+}
+.component__down__item__text--green {
+  color: var(--Green-teal);
+}
+.component__down__item__text--blue {
+  color: var(--Cobalt-blue);
+}
+
+.component__down--yellow {
+  background-color: #fffbf2;
+}
+.component__down--green {
+  background-color: #f2fbfa;
+}
+.component__down--blue {
+  background-color: #f3f3fd;
+}
+
+.component__down__button {
+  width: 100%;
+  height: 56px;
+  margin-top: 10px;
+  margin-bottom: 1.2px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--Dark-gray-blue);
+  font-size: 18px;
+  color: var(--White);
+  font-weight: 700;
+  font-family: var(--font);
+}
+
+.component__down__button:hover {
+  background: linear-gradient(var(--gradient1), var(--gradient2));
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+footer {
+  margin-top: 80px;
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                desktop mode                                */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 768px) {
+
+
+
+.component__container {
+
+  width: 738px;
+  height: 513px;
+  grid-template-columns: 368px 370px ;
+  grid-template-rows: 513px;
+  background-color: none;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), -10px -10px 20px rgba(0, 0, 0, 0.1) ;
+  border-radius: 40px ;
+}
+.component__top {
+  border-radius: 40px ;
+
+}
+.component__down {
+  border-radius: 0 40px 40px 0 ;  
+ 
+}
+
+.component__top__circule{
+  
+  width:198px ;
+  height:198px ;
+  border-radius: 50%;
+}
+
+.component__top__circule p span{
+  font-size: 3.1rem;
+}
+
+.component__top__content {
+  width: 67%;
+}
+
+.component__down__title{
+  font-size: 1.5rem;
+}
+
+}

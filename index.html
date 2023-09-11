@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="component__container">
+      <div class="component__top">
+        <h2 class="component__top__title">Your Result</h2>
+        <div class="component__top__circule">
+          <p>
+            <span>76</span> <br />
+            of 100
+          </p>
+        </div>
+        <h2 class="component__top__subtitle">Great</h2>
+        <p class="component__top__content">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+
+      <div class="component__down">
+        <h2 class="component__down__title">Summary</h2>
+        <div class="component__down__item component__down--red">
+          <p
+            class="component__down__item__text component__down__item__text--red"
+          >
+            <img src="./assets/images/icon-reaction.svg" /> Reaction
+          </p>
+          <p class="component__down__item__text__result">
+            80 / <span>100</span>
+          </p>
+        </div>
+
+        <div class="component__down__item component__down--yellow">
+          <p
+            class="component__down__item__text component__down__item__text--yellow"
+          >
+            <img src="./assets/images/icon-memory.svg" /> Memory
+          </p>
+          <p class="component__down__item__text__result">
+            92 / <span>100</span>
+          </p>
+        </div>
+
+        <div class="component__down__item component__down--green">
+          <p
+            class="component__down__item__text component__down__item__text--green"
+          >
+            <img src="./assets/images/icon-verbal.svg" /> Verbal
+          </p>
+          <p class="component__down__item__text__result">
+            61 / <span>100</span>
+          </p>
+        </div>
+
+        <div class="component__down__item component__down--blue">
+          <p
+          class="component__down__item__text component__down__item__text--blue"
+        >
+          <img src="./assets/images/icon-visual.svg" /> Visual
+        </p>
+        <p class="component__down__item__text__result">
+          72 / <span>100</span>
+        </p>
+        </div>
+        <button class="component__down__button" type="button">Continue</button>
+      </div>
+    </section>
+
+    <footer
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">César Yeguez</a>.
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>
